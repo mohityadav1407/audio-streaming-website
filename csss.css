@@ -1,0 +1,99 @@
+/* body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.theme1 {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.theme2 {
+    background-color: #333;
+    color: #f0f0f0;
+}
+
+/* Additional styling for theme changer */
+/* .theme-selector {
+    margin-bottom: 20px;
+}
+
+.theme-selector label {
+    margin-right: 10px;
+}
+.search-container {
+    position: relative;
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #searchList {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #searchList li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #searchList li:hover {
+    background: #f0f0f0;
+  }
+   */
+   .search-container {
+    position: relative;
+  }
+  
+  #searchInput {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #searchList {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    width: 300px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  #searchList li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #searchList li:hover {
+    background: #f0f0f0;
+  }
+  .navbar1{
+    background-color: wheat;
+  }

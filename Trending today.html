@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending Today</title>
+    <Style>
+        body{
+            background-image: url("https://source.unsplash.com/1000x1000/?music");
+
+        }   
+        .main-Card{
+            display: flex;
+            margin: 10px;
+        }
+        .card-body{
+            background-color: bisque;
+            
+        }
+        .card {
+  margin-right: 20px; /* Adjust the right margin as needed */
+  cursor: pointer;
+}
+
+/* To prevent margin from being applied to the last card */
+.main-Card .card:last-child {
+  margin-right: 0; /* Set the right margin of the last card to 0 */
+}
+/* .card:hover{
+    zoom: 1.15;
+    transition: opacity zoom 0.3s ease-in;
+    opacity: 0.7;
+
+    transition: zoom 0.5s;
+} */
+.card:hover {
+    zoom: 1.15;
+    transition: zoom 0.3s ease-in, opacity 0.3s ease-in; /* Transition for both zoom and opacity */
+    opacity: 0.9;
+}
+.big{
+  display: flex;
+}
+.s2{
+}
+    </Style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1>Trending Today</h1>
+    <div class="big">
+      <div class="s">
+      
+      <h3>Your fav artists Latest Songs are here...</h3>
+    </div>
+      <div class="s2">
+    <h4><a href="Project.html">Home</a></h4>
+  </div>
+  </div>
+
+    <!-- <div class="music-player">
+         Song 1 -->
+        <!-- <div class="song">
+            <h2>Song 1 Title</h2>
+            <audio controls>
+                <source src="song1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div> -->
+        
+        <!-- Song 2 -->
+        <!-- <div class="song"> -->
+            <!-- <h2>Song 2 Title</h2> -->
+            <!-- <audio controls> -->
+                <!-- <source src="song2.mp3" type="audio/mpeg"> -->
+                <!-- Your browser does not support the audio element. -->
+            <!-- </audio> -->
+        <!-- </div> -->
+
+        <!-- Add more songs similarly -->
+        
+    <!-- </div>  -->
+    <div class="main-Card">
+    <div class="card" style="width: 18rem;">
+        <img src="coversTrendintoday/Screenshot 2024-04-19 220711.png" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Linkin Park · 2024.</p>
+          <a href="#" class="btn btn-primary">
+            <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div>
+</a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?music" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Friendly Fire</h3>
+          <p class="card-text">Song by David Kushner · 2024.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div>
+    </a>
+          
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musical nature" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Skin and Bones
+        </h3>
+          <p class="card-text">Song by David Kushner.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">I Don't Wanna Wait
+                        </h3>
+          <p class="card-text">Song by David Guetta · 2024.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-Card">
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician player" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Eyes Closed
+            </h3>
+          <p class="card-text">Song by Imagine Dragons.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?music code" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Somebody To You</h3>
+          <p class="card-text">Song by CBVZ.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musical tech" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Like That
+            </h3>
+          <p class="card-text">Song by Kendrick Lamar .</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician water" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Who I Am
+            </h3>
+          <p class="card-text">Song by Alan Walker.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-Card">
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician beach" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Distractions
+            </h3>
+          <p class="card-text">Song by Ms. Jesso.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?music forest" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Horizon
+            </h3>
+          <p class="card-text">Song by Hanna Arby .</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musical book" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Francesca
+            </h3>
+          <p class="card-text">Song by Love & Axel .</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician car" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Alone
+            </h3>
+          <p class="card-text">Song by Alan Walker.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-Card">
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician water forest" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Alone 2</h3>
+          <p class="card-text">Song by Alan Walker.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?music battery" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">CARNIVAL
+            </h3>
+          <p class="card-text">Song by Kanye West.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?noise" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Wolf</h3>
+          <p class="card-text">Song by Salena Gomez.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?blur" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Whatever It take</h3>
+          <p class="card-text">Song by Imagine Dragons.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-Card">
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician water book" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Cruel Summer</h3>
+          <p class="card-text">Song by Taylor Swift.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?blank" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Lover</h3>
+          <p class="card-text">Song by Taylor Swift.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?club" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Club</h3>
+          <p class="card-text">Song by Ed Sheeran.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician music" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-Card">
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?music noise" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?noise music" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?concert" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician concert" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    </div>
+    <div class="main-Card">
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician water concert" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">         <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div> </a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?music book" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musical" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    <div class="card" style="width: 18rem;">
+        <img src="https://source.unsplash.com/200x200/?musician" height="200px" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">Let me Down Slowly</h3>
+          <p class="card-text">Song by Alec Benjamin.</p>
+          <a href="#" class="btn btn-primary">        <div class="song-controls">
+            <button class="btn btn-primary" onclick="prevSong()">Prev</button>
+            <button class="btn btn-primary" onclick="togglePlayPause()">Play/Pause</button>
+            <button class="btn btn-primary" onclick="nextSong()">Next</button>
+        </div></a>
+        </div>
+      </div>
+    </div>
+    
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="Tendingtodayjs.js"></script>
+</html>
